@@ -1,11 +1,9 @@
-SECRET_KEY = 'dummy-secret-key'
+SECRET_KEY = 'dummy'
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
-    'django.contrib.staticfiles',
-    'myapp',
 ]
 
 MIDDLEWARE = []
@@ -18,5 +16,3 @@ DATABASES = {
         'NAME': 'db.sqlite3',
     }
 }
-
-STATIC_URL = '/static/'
