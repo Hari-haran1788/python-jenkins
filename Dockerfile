@@ -11,4 +11,4 @@ RUN python manage.py migrate
 
 EXPOSE 8000
 
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app.wsgi:application"]
+CMD ["gunicorn", "--chdir", "/app", "--bind", "0.0.0.0:8000", "app.wsgi:application"]
